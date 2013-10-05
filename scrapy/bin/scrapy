@@ -1,0 +1,4 @@
+#!/Users/eric/Development/scrapy_books/scrapy/bin/python
+
+from scrapy.cmdline import execute
+execute()

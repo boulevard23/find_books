@@ -10,3 +10,5 @@ class FindBooksItem(Item):
     # name = Field()
     title = Field()
     url = Field()
+    tags = Field()
+    asins = Field()

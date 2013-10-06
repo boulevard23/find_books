@@ -12,3 +12,5 @@ class FindBooksItem(Item):
     url = Field()
     tags = Field()
     asins = Field()
+    amazonRating = Field()
+    reviewsNum = Field()

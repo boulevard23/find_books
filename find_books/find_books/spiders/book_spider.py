@@ -43,8 +43,9 @@ class BookSpider(BaseSpider):
     else:
       return
 
-    title = hxs.select('//span[@id="btAsinTitle"][1]/text()').extract()[0].strip()
-    if len(title) == 0:
+    try:
+      title = hxs.select('//span[@id="btAsinTitle"][1]/text()').extract()[0].strip()
+    except:
       title = hxs.select('//h1[@id="title"][1]/text()').extract()[0].strip()
     item['title'] = title
 
